@@ -1,0 +1,40 @@
+{
+  "name": "codekit-unbottle",
+  "version": "1.0.3",
+  "homepage": "https://github.com/dfosco/codekit-unbottle",
+  "authors": [
+    {
+    "name": "Daniel Fosco",
+    "email": "danielfosco@gmail.com",
+    "homepage": "http://danielfos.co"
+    }
+  ],
+  "description": "A scaffolding for use with CodeKit -- includes Bitters, Bourbon & Neat",
+  "main": "build/styles/app.scss",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "codekit",
+    "automate",
+    "build",
+    "html",
+    "bourbon",
+    "neat",
+    "bitters",
+    "thoughtbot",
+    "jquery",
+    "font-awesome",
+    "scaffold"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".codekit-cache",
+    ".gitignore",
+    "*.sublime-project",
+    "*.sublime-workspace"
+  ]
+}
