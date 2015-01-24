@@ -10,7 +10,7 @@ $img-url: "../img";
 // Include Libraries
 // ------------------------------------------------------------------------
 @import "bourbon";
-@import "../lib/base/_base.scss";
+@import "base/_base.scss";
 @import "neat";
 
 
@@ -192,6 +192,10 @@ body {
 	background: $light-gray;
 	border-radius: 5px;
 	padding: 5px;
-	@include margin(5px null 5px null)
+	@include margin(5px null 5px null);
+
+  &:hover {
+    background: darken($light-gray, 5%);
+  }
 }
 
