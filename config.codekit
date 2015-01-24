@@ -2,40 +2,20 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18270",
 "files": {
-	"\/dist\/assets\/css\/app.css": {
+	"\/app\/assets\/css\/app.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/assets\/css\/app.css",
+		"inputAbbreviatedPath": "\/app\/assets\/css\/app.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/assets\/js\/app.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/assets\/js\/app.min.js",
-		"outputAbbreviatedPath": "\/app\/assets\/js\/app.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 2
-		},
-	"\/dist\/index.html": {
+	"\/app\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages\/index.html",
+		"inputAbbreviatedPath": "\/app\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -77,7 +57,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/kits\/index.kit",
-		"outputAbbreviatedPath": "\/app\/index.html",
+		"outputAbbreviatedPath": "\/source\/kits\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -86,25 +66,25 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/kits\/pages\/index.kit",
-		"outputAbbreviatedPath": "\/app\/index.html",
+		"outputAbbreviatedPath": "\/source\/kits\/pages\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/source\/kits\/snippets\/footer.kit": {
 		"fileType": 2048,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/kits\/snippets\/footer.kit",
-		"outputAbbreviatedPath": "\/app\/footer.html",
+		"outputAbbreviatedPath": "\/source\/kits\/snippets\/footer.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/source\/kits\/snippets\/header.kit": {
 		"fileType": 2048,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/kits\/snippets\/header.kit",
-		"outputAbbreviatedPath": "\/app\/header.html",
+		"outputAbbreviatedPath": "\/source\/kits\/snippets\/header.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1370,10 +1350,10 @@
 		},
 	"kitAutoOutputPathEnabled": 1,
 	"kitAutoOutputPathFilenamePattern": "*.html",
-	"kitAutoOutputPathRelativePath": "\/dist",
-	"kitAutoOutputPathReplace1": "\/app\/snippets",
-	"kitAutoOutputPathReplace2": "\/dist",
-	"kitAutoOutputPathStyle": 1,
+	"kitAutoOutputPathRelativePath": "\/app",
+	"kitAutoOutputPathReplace1": "\/source\/snippets",
+	"kitAutoOutputPathReplace2": "\/app",
+	"kitAutoOutputPathStyle": 3,
 	"lessAllowInsecureImports": 0,
 	"lessAutoOutputPathEnabled": 1,
 	"lessAutoOutputPathFilenamePattern": "*.css",
@@ -1401,7 +1381,7 @@
 	"reloadFileURLs": 1,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
-	"sassAutoOutputPathRelativePath": "\/dist\/assets\/css",
+	"sassAutoOutputPathRelativePath": "\/app\/assets\/css",
 	"sassAutoOutputPathReplace1": "scss",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 1,
@@ -1588,7 +1568,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": "dist"
+	"websiteRelativeRoot": "\/app"
 	},
 "settingsFileVersion": "2"
 }
