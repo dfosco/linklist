@@ -43,11 +43,11 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 2
 		},
-	"\/source\/kits\/dist\/index.html": {
+	"\/source\/kits\/app\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/kits\/dist\/index.html",
+		"inputAbbreviatedPath": "\/source\/kits\/app\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -57,16 +57,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/kits\/index.kit",
-		"outputAbbreviatedPath": "\/source\/kits\/index.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/source\/kits\/pages\/index.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/kits\/pages\/index.kit",
-		"outputAbbreviatedPath": "\/source\/kits\/pages\/index.html",
+		"outputAbbreviatedPath": "\/app\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -75,7 +66,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/kits\/snippets\/footer.kit",
-		"outputAbbreviatedPath": "\/source\/kits\/snippets\/footer.html",
+		"outputAbbreviatedPath": "\/app\/footer.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -84,7 +75,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/kits\/snippets\/header.kit",
-		"outputAbbreviatedPath": "\/source\/kits\/snippets\/header.html",
+		"outputAbbreviatedPath": "\/app\/header.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1353,7 +1344,7 @@
 	"kitAutoOutputPathRelativePath": "\/app",
 	"kitAutoOutputPathReplace1": "\/source\/snippets",
 	"kitAutoOutputPathReplace2": "\/app",
-	"kitAutoOutputPathStyle": 3,
+	"kitAutoOutputPathStyle": 1,
 	"lessAllowInsecureImports": 0,
 	"lessAutoOutputPathEnabled": 1,
 	"lessAutoOutputPathFilenamePattern": "*.css",
