@@ -1,6 +1,6 @@
 .DS_Store
 
-app/sass/.sass-cache
+source/sass/.sass-cache
 
 .codekit-cache
 
