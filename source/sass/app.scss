@@ -21,6 +21,15 @@ body {
 	margin: 0px;
 }
 
+.container {
+  @include span-columns(16 of 16);
+}
+
+section.page-content {
+  @include span-columns(8 of 16);  
+  @include shift(4);
+}
+
 .footer {
   ///////////////////////////////////////////////////////////////////////////////////
   $base-spacing: 1.5em !default;
@@ -48,8 +57,8 @@ body {
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
   background: $footer-background;
-  padding: ($base-spacing * 2) $gutter;
-  width: 100%;
+  padding: ($base-spacing) $gutter;
+  @include span-columns(16 of 16);
 
   .footer-logo {
     margin-bottom: 2em;
@@ -68,40 +77,6 @@ body {
       @include shift(3);
     }
   }
-
-  ul {
-    margin-bottom: $base-spacing * 2;
-
-    @include media($medium-screen) {
-      @include span-columns(3);
-      @include omega(3n);
-      @include clearfix;
-    }
-  }
-
-  li {
-    text-align: center;
-
-    @include media($medium-screen) {
-      text-align: left;
-    }
-  }
-
-  li a {
-    color: $footer-link-color;
-
-    &:focus,
-    &:hover {
-      color: transparentize($footer-color, 0);
-    }
-  }
-
-  li h3 {
-    color: $footer-color;
-    font-size: 1em;
-    font-weight: 800;
-    margin-bottom: 0.4em;
-  }  
 
   hr {
     border: 1px solid transparentize($footer-disclaimer-color, 0.3);
@@ -124,7 +99,9 @@ body {
 // Components
 // ------------------------------------------------------------------------
 
-.hero {  
+.hero {
+
+  @include span-columns(16 of 16);  
   ///////////////////////////////////////////////////////////////////////////////////
   $base-border-radius: 3px !default;
   $base-accent-color: #477DCA !default;
@@ -189,13 +166,15 @@ body {
 }
 
 .link-box {
-	background: $light-gray;
+  &:hover {
+    background: darken($medium-gray, 5%);
+  }
+
+  @include margin(5px null 5px null);
+
+  background: $medium-gray;
 	border-radius: 5px;
 	padding: 5px;
-	@include margin(5px null 5px null);
 
-  &:hover {
-    background: darken($light-gray, 5%);
-  }
 }
 
