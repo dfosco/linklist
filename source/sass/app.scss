@@ -42,7 +42,7 @@ section.link-list {
 
 .link-section-title {
   @include margin(2em null null null);
-  h2 { font-size: $h5-font-size; }
+  h2 { font-size: $base-font-size; }
 }
 
 .link-box {
@@ -61,7 +61,7 @@ section.link-list {
 
 .link-title {
   margin-bottom: 0.2em;
-  font-size: $h4-font-size;
+  font-size: $h5-font-size;
 }
 
 .link-description {
