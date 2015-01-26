@@ -24,21 +24,28 @@ $base-z-index: 0;
 
 // Default Colors
 $blue: #477DCA;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #DDD;
+//$dark-gray: #333;
+//$medium-gray: #999;
+//$light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 //User Colors
-$light-black: #3d3c3d;
-$dark-gray: #908f94;
-$medium-gray: #c3c1c7;
-$light-gray: #ecebf5;
-$strong-base: #eb6857;
-$middle-base: #f09659;
-$base: #ebba4c;
+$darker-gray: #4a4a48;
+$dark-gray: #949391;
+$medium-gray: #cccbc8;
+$light-gray: #f5f2eb;
+
+$half-base: #f5da9d;
+$base: #fbc751;
+$strong-base: #f09a36;
+
+$half-accent: #e1796d;
+$accent: #cc514e;
+$strong-accent: #cc3b38;
+
+
 
 
 // Background Color
@@ -46,11 +53,11 @@ $base-background-color: $light-gray;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: $accent;
 
 // Link Colors
-$base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$base-link-color: $half-accent;
+$hover-link-color: $accent;
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 

@@ -41,17 +41,17 @@ section.link-list {
 }
 
 .link-section-title {
-  @include margin(2em null null null);
+  @include margin(2em null null 0.5em);
   h2 { font-size: $base-font-size; }
 }
 
 .link-box {
   &:hover {
-    background: darken(#ECEBF5, 4%);
+    background: darken($light-gray, 4%);
   }
   @include margin(0.5em null 0.5em null);
 
-  background: darken(#ECEBF5, 2%);
+  background: darken($light-gray, 2%);
   padding: 0.5em;
 }
 
@@ -66,12 +66,12 @@ section.link-list {
 
 .link-description {
   margin: 0;
+  color: $dark-gray
 }
 
 .footer {
   ///////////////////////////////////////////////////////////////////////////////////
   $base-spacing: 1.5em !default;
-  $base-accent-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
   
@@ -89,10 +89,10 @@ section.link-list {
   }
   //////////////////////////////////////////////////////////////////////////////////
 
-  $footer-background: desaturate(darken($base-accent-color, 20%), 30%);
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+  $footer-background: desaturate($strong-base, 20%);
+  $footer-color: $darker-gray;
+  $footer-link-color: transparentize($footer-color, 0.4);
+  $footer-disclaimer-color: transparentize($footer-color, 0.4);
 
   background: $footer-background;
   padding: ($base-spacing) $gutter;
@@ -117,7 +117,7 @@ section.link-list {
   }
 
   hr {
-    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    border: 1px solid transparentize($footer-disclaimer-color, 0.4);
     margin: 0 auto $base-spacing;
     width: 12em;
   }
@@ -140,9 +140,11 @@ section.link-list {
 
 // CTA
 // ------------------------------------------------------------------------
+
+$cta-width: 8;
 .cta {
-  @include span-columns(8 of 16);
-  @include shift(4);
+  @include span-columns($cta-width of 16);
+  @include shift($cta-width/2);
   @include margin(1.5em null null null);
   text-align: center;
 
@@ -150,14 +152,17 @@ section.link-list {
     font-weight: 700;
   }
 
+  $button-width: 2.5;
   button {
-    @include span-columns(1.2 of 8);
+    @include span-columns($button-width of $cta-width);
     padding: 0.6em 1em;
   }
-
+  
+  $input-width: ($cta-width - $button-width) * 0.8;
+  $shift-width: ($cta-width - $button-width) * 0.2;    
   input { 
-    @include shift(1.4);
-    @include span-columns(4 of 8);
+    @include shift($shift-width);
+    @include span-columns($input-width of $cta-width);
   }
 }
 
@@ -166,13 +171,10 @@ section.link-list {
 
   ///////////////////////////////////////////////////////////////////////////////////
   $base-border-radius: 3px !default;
-  $base-accent-color: #477DCA !default;
   $large-screen: em(860) !default;
   //////////////////////////////////////////////////////////////////////////////////
 
-  $hero-background-top: #7F99BE; 
-  $hero-background-bottom: #20392B;
-  $hero-color: white;
+  $hero-color: $strong-base;
   $gradient-angle: 10deg;
   $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
 
@@ -183,8 +185,9 @@ section.link-list {
 
   @include span-columns(16 of 16);  
 
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-  background-color: #324766;
+  //@include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  //background-color: #324766;
+  background-color: $half-base;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,7 +208,7 @@ section.link-list {
   @include clearfix;
   color: $hero-color;
   margin: auto;
-  padding: 3.5em 3.5em 0 3.5em;
+  padding: 3.5em;
   text-align: center;
 }
 
@@ -213,24 +216,21 @@ section.link-list {
   text-align: center;
   
   h1 {
+    @include media($large-screen) { font-size: 1.8em; }
+
+    color: $strong-base;
     font-size: 1.6em;
     margin-bottom: 0.5em;
-
-    @include media($large-screen) {
-      font-size: 1.8em;
-    }
   }
 
   h2 {
+    @include media($large-screen) {font-size: 1.1em; max-width: 40%; }
+
+    color: $strong-base;
     font-size: $h5-font-size;
     font-weight: 300;
     line-height: 1.4em;
-    margin: 0 auto 3em auto; 
-
-    @include media($large-screen) {
-      font-size: 1.1em;
-      max-width: 40%;
-    }
+    margin: 0 auto 0 auto; 
   }
 }
 
