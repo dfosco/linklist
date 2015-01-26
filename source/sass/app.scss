@@ -137,7 +137,32 @@ section.link-list {
 // Components
 // ------------------------------------------------------------------------
 
+
+// CTA
+// ------------------------------------------------------------------------
+.cta {
+  @include span-columns(8 of 16);
+  @include shift(4);
+  @include margin(1.5em null null null);
+  text-align: center;
+
+  p {
+    font-weight: 700;
+  }
+
+  button {
+    @include span-columns(1.2 of 8);
+    padding: 0.6em 1em;
+  }
+
+  input { 
+    @include shift(1.4);
+    @include span-columns(4 of 8);
+  }
+}
+
 // Hero Variables
+// ------------------------------------------------------------------------
 
   ///////////////////////////////////////////////////////////////////////////////////
   $base-border-radius: 3px !default;
@@ -151,6 +176,9 @@ section.link-list {
   $gradient-angle: 10deg;
   $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
 
+// Hero
+// ------------------------------------------------------------------------
+
 .hero {
 
   @include span-columns(16 of 16);  
@@ -160,7 +188,6 @@ section.link-list {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
 
   button {
     @include button(flat, $base-accent-color);
@@ -168,7 +195,7 @@ section.link-list {
   }
 }
 
-.hero-logo img {
+.hero-logo {
   height: 4em;
   margin-bottom: 1em;
 }
@@ -194,8 +221,9 @@ section.link-list {
     }
   }
 
-  h5 {
-    //font-weight: 200;
+  h2 {
+    font-size: $h5-font-size;
+    font-weight: 300;
     line-height: 1.4em;
     margin: 0 auto 3em auto; 
 
@@ -204,20 +232,5 @@ section.link-list {
       max-width: 40%;
     }
   }
-}
-
-
-
-.link-box {
-  &:hover {
-    background: darken($medium-gray, 5%);
-  }
-
-  @include margin(5px null 5px null);
-
-  background: $medium-gray;
-	border-radius: 5px;
-	padding: 5px;
-
 }
 
