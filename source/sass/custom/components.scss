@@ -1,0 +1,102 @@
+// Components
+// ------------------------------------------------------------------------
+
+
+// CTA
+// ------------------------------------------------------------------------
+
+$cta-width: 8;
+.cta {
+  @include span-columns($cta-width of 16);
+  @include shift($cta-width/2);
+  @include margin(1.5em null null null);
+  text-align: center;
+
+  p {
+    font-weight: 400;
+  }
+
+  $button-width: 2.5;
+  button {
+    @include span-columns($button-width of $cta-width);
+    padding: 0.6em 1em;
+    margin-left: -0.8em;
+  }
+  
+  $input-width: ($cta-width - $button-width) * 0.8;
+  $shift-width: ($cta-width - $button-width) * 0.2;    
+  input { 
+    @include shift($shift-width);
+    @include span-columns($input-width of $cta-width);
+  }
+}
+
+// Hero Variables
+// ------------------------------------------------------------------------
+
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-radius: 3px !default;
+  $large-screen: em(860) !default;
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $hero-color: $strong-base;
+  $gradient-angle: 10deg;
+  $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+
+// Hero
+// ------------------------------------------------------------------------
+
+.hero {
+
+  @include span-columns(16 of 16);  
+
+  //@include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  //background-color: #324766;
+  background: url("#{$img-url}/bg_link.png");
+  //background-position: top;
+  background-repeat: repeat-x 0 0;
+  //background-size: cover;
+
+  button {
+    @include button(flat, $base-accent-color);
+    padding: 0.7em 1em;
+  }
+}
+
+.hero-logo {
+  height: 6em;
+  margin-bottom: 1em;
+  @extend .unselectable;
+}
+
+.hero-inner {
+  @include omega;
+  @include clearfix;
+  color: $darker-gray;
+  margin: auto;
+  padding: 3.5em;
+  text-align: center;
+}
+
+.hero-copy {
+  text-align: center;
+  
+  h1 {
+    @include media($large-screen) { font-size: 1.8em; }
+
+    color: $dark-gray;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    @include media($large-screen) {font-size: 1.1em; max-width: 40%; }
+
+    color: $dark-gray;
+    font-size: $h5-font-size;
+    //font-weight: 300;
+    line-height: 1.4em;
+    margin: 0 auto 0 auto; 
+  }
+}
+
