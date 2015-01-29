@@ -5,12 +5,12 @@ $img-url: "../img";
 $sans-serif: $helvetica;
 $serif: $georgia;
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$header-font-family: "calluna-sans";
 
 // Font Sizes
 $base-font-size: 1em;
-$h1-font-size: $base-font-size * 2.25;
-$h2-font-size: $base-font-size * 2;
+$h1-font-size: $base-font-size * 2.5;
+$h2-font-size: $base-font-size * 2.25;
 $h3-font-size: $base-font-size * 1.75;
 $h4-font-size: $base-font-size * 1.5;
 $h5-font-size: $base-font-size * 1.25;
@@ -27,15 +27,13 @@ $base-z-index: 0;
 
 // Default Colors
 $blue: #477DCA;
-//$dark-gray: #333;
-//$medium-gray: #999;
-//$light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 //User Colors
-$darker-gray: #4a4a48;
+$blackish: #5C5C59;
+$darker-gray: #5C5C59;
 $dark-gray: #757473;
 $medium-gray: #cccbc8;
 $light-gray: #f5f2eb;

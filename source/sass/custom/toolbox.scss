@@ -21,15 +21,11 @@
 	  button {
 	  	@include shift( ($cta-width - ($button-width))/2 );
 	    @include span-columns($button-width of $cta-width);
-	    //@include omega(2n);
-	    display: block;
 	  }
 	
 	  $input-width: 8 !default;
 	  .input { 
 	  	@include shift( ($cta-width - ($input-width))/2 );
 	    @include span-columns($input-width of $cta-width);
-	    //@include omega(2n);
-	    //padding: 0.6em 1em;
 	  }
 }

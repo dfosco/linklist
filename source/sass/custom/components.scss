@@ -1,3 +1,5 @@
+@import "toolbox.scss";
+
 // Components
 // ------------------------------------------------------------------------
 
@@ -5,31 +7,23 @@
 // CTA
 // ------------------------------------------------------------------------
 
-$cta-width: 8;
+$cta-width: 10;
+$total-cta-width: 16;
+
 .cta {
-  @include span-columns($cta-width of 16);
-  @include shift($cta-width/2);
+  @include span-columns($cta-width of $total-cta-width);
+  @include shift(($total-cta-width - $cta-width)/ 2 );
   @include margin(1.5em null null null);
   text-align: center;
 
   p {
     font-weight: 400;
   }
-
-  $button-width: 2.5;
-  button {
-    @include span-columns($button-width of $cta-width);
-    padding: 0.6em 1em;
-    margin-left: -0.8em;
-  }
-  
-  $input-width: ($cta-width - $button-width) * 0.8;
-  $shift-width: ($cta-width - $button-width) * 0.2;    
-  input { 
-    @include shift($shift-width);
-    @include span-columns($input-width of $cta-width);
-  }
 }
+
+@include form-keepin(6, 14);
+@include media($medium-screen) { @include form-keepin(4, 8) } 
+@include media($large-screen) { @include form-keepin(4, 6) }
 
 // Hero Variables
 // ------------------------------------------------------------------------
@@ -82,33 +76,40 @@ $cta-width: 8;
   text-align: center;
   
   h1 {
-    @include media($large-screen) { font-size: 1.8em; }
-
+    //@include media($large-screen) { font-size: 1.8em; }
     color: $dark-gray;
-    font-size: 1.6em;
+    //font-size: 1.6em;
     margin-bottom: 0.5em;
   }
-}
 
-.hero-list { 
-@include media($medium-screen, $large-screen) { 
-  li {
-    display: inline;
-    list-style-type: disc;
-    padding: 10px;
-  }      
-}
-  margin-bottom: 0.5em;
-
-  li::after { 
-    //content: "·";
-  }
-
-
+  h2 {
   color: $dark-gray;
-  font-size: $h5-font-size;
+  font-size: $h4-font-size;
   font-weight: 300;
   line-height: 1.4em;
   margin: 0 auto 0 auto; 
-}
+  }
 
+
+  .hero-list { 
+  @include media($medium-screen, $large-screen) { 
+    li {
+      display: inline;
+      list-style-type: disc;
+      padding: 10px;
+    }      
+  }
+    margin-bottom: 0.5em;
+
+    li::after { 
+      //content: "·";
+    }
+
+    color: $dark-gray;
+    font-size: $h5-font-size;
+    font-weight: 300;
+    line-height: 1.4em;
+    margin: 0 auto 0 auto; 
+  }
+
+}

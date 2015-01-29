@@ -41,7 +41,7 @@ section.link-list {
 
 .link-section-title {
   @include margin(2em null null 0.5em);
-  h2 { font-size: $base-font-size; }
+  h2 { font-size: $h5-font-size; }
 }
 
 .link-box {
@@ -78,7 +78,7 @@ section.link-list {
   ///////////////////////////////////////////////////////////////////////////////////
   $base-spacing: 1.5em !default;
   $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
+  $large-screen: em(860) !default; 
   
   ul {
     padding: 0;
@@ -91,6 +91,8 @@ section.link-list {
 
   a {
     text-decoration: none;
+    color: $light-gray;
+    &:hover { color: darken($light-gray, 10%) }
   }
   //////////////////////////////////////////////////////////////////////////////////
 
