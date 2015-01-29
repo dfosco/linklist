@@ -1,0 +1,35 @@
+ .unselectable {
+    /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+    /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
+    -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+    -webkit-user-select: none;
+    -ms-user-select: none; /* From IE10 only */
+    user-select: none; /* Not valid CSS yet, as of July 2012 */
+
+    -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+    user-drag: none;
+}
+
+
+
+// Form Button
+// ------------------------------------------------------------------------
+
+  @mixin form-keepin($button-width, $input-width){
+      	
+	  $button-width: 6 !default;
+	  button {
+	  	@include shift( ($cta-width - ($button-width))/2 );
+	    @include span-columns($button-width of $cta-width);
+	    //@include omega(2n);
+	    display: block;
+	  }
+	
+	  $input-width: 8 !default;
+	  .input { 
+	  	@include shift( ($cta-width - ($input-width))/2 );
+	    @include span-columns($input-width of $cta-width);
+	    //@include omega(2n);
+	    //padding: 0.6em 1em;
+	  }
+}
