@@ -64,24 +64,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/app\/footer.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/footer.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/app\/header.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/header.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/app\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -1489,7 +1471,7 @@
 	"kitAutoOutputPathEnabled": 1,
 	"kitAutoOutputPathFilenamePattern": "*.html",
 	"kitAutoOutputPathRelativePath": "\/app",
-	"kitAutoOutputPathReplace1": "\/source\/snippets",
+	"kitAutoOutputPathReplace1": "\/source\/kit",
 	"kitAutoOutputPathReplace2": "\/app",
 	"kitAutoOutputPathStyle": 1,
 	"lessAllowInsecureImports": 0,
