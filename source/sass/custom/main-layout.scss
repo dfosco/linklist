@@ -6,7 +6,10 @@ body {
 }
 
 .container {
+  @include media($medium-screen, $large-screen) {
   @include span-columns(16 of 16);
+}
+  @include span-columns(10 of 10);
 }
 
 .page-header { 
@@ -19,9 +22,16 @@ body {
 }
 
 section.link-list {
+
+  @include media($medium-screen, $large-screen) {
   @include span-columns(10 of 16);  
   @include shift(3);
-  
+
+  }
+
+  @include span-columns(9.5 of 10);
+  @include shift(0.25);  
+
   margin-bottom: 1.5em;
 
   h5 {
@@ -35,12 +45,18 @@ section.link-list {
 }
 
 .link-box {
-  &:hover {
-    background: darken($light-gray, 4%);
-  }
+  
+  @include media($medium-screen, $large-screen) { 
+        background: darken($light-gray, 2%);
+  &:hover { background: darken($light-gray, 4%); }
+}
+
+  background: darken($light-gray, 6%);
+  &:hover { background: darken($light-gray, 9%); }
+  
   @include margin(0.5em null 0.5em null);
 
-  background: darken($light-gray, 2%);
+  
   padding: 0.5em;
 }
 
