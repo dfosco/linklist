@@ -64,6 +64,26 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/app\/assets\/js\/app-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/assets\/js\/app-min.js",
+		"outputAbbreviatedPath": "\/app\/assets\/js\/app-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 2
+		},
+	"\/app\/header.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/header.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/app\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,

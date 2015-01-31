@@ -1,3 +1,6 @@
+// Unselectable Elements
+// ------------------------------------------------------------------------
+
  .unselectable {
     /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
     /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
@@ -28,4 +31,15 @@
 	  	@include shift( ($cta-width - ($input-width))/2 );
 	    @include span-columns($input-width of $cta-width);
 	  }
+}
+
+// Mobile Hidden
+// ------------------------------------------------------------------------
+
+.mobile-hidden {
+	display: none;
+
+	@include media($medium-screen, $large-screen) {
+		display: inline
+	}
 }
