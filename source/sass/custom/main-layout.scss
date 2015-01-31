@@ -6,15 +6,56 @@ body {
 }
 
 .container {
-  @include media($medium-screen, $large-screen) {
-  @include span-columns(16 of 16);
-}
   @include span-columns(10 of 10);
+
+  @include media($medium-screen, $large-screen) {
+    @include span-columns(16 of 16);
+  }
 }
 
+header.navigation {
+  $navigation-padding: 1em;
+  $navigation-height: 60px;
+  min-height: $navigation-height;
+  margin-bottom: -$navigation-height;
+  width: 100%;
+  z-index: 999;
+  background: none;
 
+  .navigation-wrapper {
+    @include clearfix;
+    @include outer-container;
+    position: relative;
+    z-index: 9999;
 
-.page-header { 
+    .back-home {
+    font-family: 'jaf-domus-titling-web', sans-serif;
+    font-weight: 700;
+    font-size: $h5-font-size;
+    padding-left: $navigation-padding;
+
+    a { color: #CC514E };
+    a:hover { color: #CB4D4E };
+    }
+
+    .back-arrow {
+      @include media($medium-screen, $large-screen) { 
+        height: 15px;
+        width: 20px;
+        margin-right: 5px
+      }
+
+      height: 25px;
+      margin-top: 15px;
+
+      //background: url('#{$img-url}/back-arrow.svg') no-repeat right;
+
+      &:hover {
+        //background-image: url('#{$img-url}/back-arrow--hover.svg') no-repeat right;
+      }
+    }
+
+  }
 
 }
 
@@ -139,67 +180,5 @@ section.link-list {
     margin: auto;
     max-width: 35em;
     text-align: center;
-  }
-}
-
-
-
-
-/*-------*/
-
-header.navigation {
-  $navigation-padding: 1em;
-  $navigation-height: 60px;
-  min-height: $navigation-height;
-  margin-bottom: -$navigation-height;
-  width: 100%;
-  z-index: 999;
-  background: none;
-
-  .navigation-wrapper {
-    @include clearfix;
-    @include outer-container;
-    position: relative;
-    z-index: 9999;
-
-    .back-home {
-    font-family: 'jaf-domus-titling-web', sans-serif;
-    font-weight: 700;
-    font-size: $h5-font-size;
-    padding-left: $navigation-padding;
-
-    a { color: #CC514E };
-    a:hover { color: #CB4D4E };
-    }
-
-    .back-arrow {
-      @include media($medium-screen, $large-screen) { 
-        height: 15px;
-        width: 20px;
-        margin-right: 5px
-      }
-
-      height: 25px;
-      margin-top: 15px;
-
-      //background: url('#{$img-url}/back-arrow.svg') no-repeat right;
-
-      &:hover {
-        //background-image: url('#{$img-url}/back-arrow--hover.svg') no-repeat right;
-      }
-    }
-
-  }
-
-  .logo {
-    float: left;
-    max-height: $navigation-height;
-    
-    padding-right: 2em;
-
-    img {
-      max-height: $navigation-height;
-      padding: 0.8em 0;
-    }
   }
 }
