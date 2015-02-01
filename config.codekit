@@ -11,15 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/app\/assets\/css\/toolbox.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/assets\/css\/toolbox.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/app\/assets\/img\/bg_link.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -75,15 +66,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 2
 		},
-	"\/app\/header.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/header.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/app\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -131,6 +113,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/kits\/snippets\/footer.kit",
 		"outputAbbreviatedPath": "\/app\/footer.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/source\/kits\/snippets\/header.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/kits\/snippets\/header.kit",
+		"outputAbbreviatedPath": "\/app\/header.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -837,15 +828,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/source\/sass\/custom\/components.scss": {
+	"\/source\/sass\/custom\/_components.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/sass\/custom\/components.scss",
-		"outputAbbreviatedPath": "\/app\/assets\/css\/components.css",
+		"inputAbbreviatedPath": "\/source\/sass\/custom\/_components.scss",
+		"outputAbbreviatedPath": "\/app\/assets\/css\/_components.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
@@ -853,15 +844,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/source\/sass\/custom\/main-layout.scss": {
+	"\/source\/sass\/custom\/_main-layout.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/sass\/custom\/main-layout.scss",
-		"outputAbbreviatedPath": "\/app\/assets\/css\/main-layout.css",
+		"inputAbbreviatedPath": "\/source\/sass\/custom\/_main-layout.scss",
+		"outputAbbreviatedPath": "\/app\/assets\/css\/_main-layout.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
@@ -869,15 +860,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/source\/sass\/custom\/toolbox.scss": {
+	"\/source\/sass\/custom\/_toolbox.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/sass\/custom\/toolbox.scss",
-		"outputAbbreviatedPath": "\/app\/assets\/css\/toolbox.css",
+		"inputAbbreviatedPath": "\/source\/sass\/custom\/_toolbox.scss",
+		"outputAbbreviatedPath": "\/app\/assets\/css\/_toolbox.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
