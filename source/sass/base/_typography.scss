@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $header-font-family;
+  font-family: $header-font-family, $sans-serif;
   line-height: $header-line-height;
   margin: 0;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings

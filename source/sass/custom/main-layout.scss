@@ -29,7 +29,7 @@ header.navigation {
     z-index: 9999;
 
     .back-home {
-    font-family: 'jaf-domus-titling-web', sans-serif;
+    font-family: 'jaf-domus-titling-web', $sans-serif;
     font-weight: 700;
     font-size: $h5-font-size;
     padding-left: $navigation-padding;
@@ -64,6 +64,8 @@ header.navigation {
   @include outer-container;
 }
 
+
+
 section.link-list {
 
   @include media($medium-screen, $large-screen) {
@@ -81,6 +83,7 @@ section.link-list {
     @include margin(2em null 1em null);
   }
 }
+
 
 .link-section-title {
   @include margin(2em null null 0.5em);
