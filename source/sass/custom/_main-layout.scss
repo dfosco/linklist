@@ -97,8 +97,8 @@ section.link-list {
   &:hover { background: darken($light-gray, 4%); }
 }
 
-  background: darken($light-gray, 6%);
-  &:hover { background: darken($light-gray, 9%); }
+  background: darken($light-gray, 4%);
+  &:hover { background: darken($light-gray, 6%); }
   
   @include margin(0.5em null 0.5em null);
 
@@ -117,8 +117,21 @@ section.link-list {
 
 .link-description {
   margin: 0;
-  color: $dark-gray
 }
+
+blockquote {
+    
+    &.link-description {
+      @include margin(0.8em null)
+    }
+
+    @include media($medium-screen, $large-screen) { 
+      border-left: 2px solid darken($medium-gray, 8%);
+    }
+    
+    font-size: 0.95em;
+    border-left: 2px solid $light-gray;
+  } 
 
 .footer {
   ///////////////////////////////////////////////////////////////////////////////////
