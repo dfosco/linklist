@@ -106,7 +106,7 @@ section.link-list {
   padding: 0.5em;
 }
 
-.link-box--inner {
+.link-box__inner {
   padding: 0.75em;
 }
 
@@ -115,8 +115,8 @@ section.link-list {
   font-size: $h5-font-size;
 }
 
-.link-description {
-  margin: 0;
+a + p.link-description {
+  @include margin(1em 0 0 0);
 }
 
 blockquote {

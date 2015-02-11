@@ -92,24 +92,42 @@ $total-width: 10;
 
 
   .hero-list { 
-  @include media($medium-screen, $large-screen) { 
-    li {
-      display: inline;
-      list-style-type: disc;
-      padding: 10px;
-    }      
-  }
     margin-bottom: 0.5em;
 
-    li::after { 
-      //content: "·";
+    li {
+      color: $dark-gray;
+      display: inline;
+
+      font-family: $header-font-family;
+      font-size: $h4-font-size;
+      font-weight: 300;
+
+      line-height: 1.4em;
+      list-style-type: none;
+ 
+      margin: 0 auto 0 auto; 
+      padding: 0.25em 0em;
+      //text-align: left;
+    }      
+    
+      li:nth-child(odd)::after {
+            content: " ·";
+            font-weight: 700;
+      }
+    
+
+      @include media($medium-screen, $large-screen) { 
+        li {
+          display: inline;
+        }
+        li:nth-child(1)::after, li:nth-child(2)::after, li:nth-child(3)::after { 
+          content: " ·";
+          font-weight: 700;
+        }
+
+        li:last-of-type {
+          content: " "
+        }
+      }
     }
-
-    color: $dark-gray;
-    font-size: $h5-font-size;
-    font-weight: 300;
-    line-height: 1.4em;
-    margin: 0 auto 0 auto; 
-  }
-
 }
