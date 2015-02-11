@@ -46,10 +46,10 @@
 // Mobile Hidden
 // ------------------------------------------------------------------------
 
-.mobile-hidden {
+.mobile-hide {
 	display: none;
 
 	@include media($medium-screen, $large-screen) {
-		display: inline
+		display: inline;
 	}
 }
