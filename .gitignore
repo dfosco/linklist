@@ -8,6 +8,6 @@ source/sass/.sass-cache
 
 *.sublime-workspace
 
-config.codekit
+*.codekit
 
 bower.json
