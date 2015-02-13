@@ -2,75 +2,75 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18493",
 "files": {
-	"\/app\/assets\/css\/app.css": {
+	"\/assets\/css\/app.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/assets\/css\/app.css",
+		"inputAbbreviatedPath": "\/assets\/css\/app.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/app\/assets\/img\/bg_link.png": {
+	"\/assets\/img\/bg_link.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2041,
-		"inputAbbreviatedPath": "\/app\/assets\/img\/bg_link.png",
-		"outputAbbreviatedPath": "\/app\/assets\/img\/bg_link.png",
+		"inputAbbreviatedPath": "\/assets\/img\/bg_link.png",
+		"outputAbbreviatedPath": "\/assets\/img\/bg_link.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/app\/assets\/img\/favicon.png": {
+	"\/assets\/img\/favicon.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 5985,
-		"inputAbbreviatedPath": "\/app\/assets\/img\/favicon.png",
-		"outputAbbreviatedPath": "\/app\/assets\/img\/favicon.png",
+		"inputAbbreviatedPath": "\/assets\/img\/favicon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/favicon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/app\/assets\/img\/favicon_better.png": {
+	"\/assets\/img\/favicon_better.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 7877,
-		"inputAbbreviatedPath": "\/app\/assets\/img\/favicon_better.png",
-		"outputAbbreviatedPath": "\/app\/assets\/img\/favicon_better.png",
+		"inputAbbreviatedPath": "\/assets\/img\/favicon_better.png",
+		"outputAbbreviatedPath": "\/assets\/img\/favicon_better.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/app\/assets\/img\/logo.png": {
+	"\/assets\/img\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 4649,
-		"inputAbbreviatedPath": "\/app\/assets\/img\/logo.png",
-		"outputAbbreviatedPath": "\/app\/assets\/img\/logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/app\/assets\/js\/app-min.js": {
+	"\/assets\/js\/app-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/assets\/js\/app-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/app-min.js",
 		"outputAbbreviatedPath": "\/app\/assets\/js\/app-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 2
 		},
-	"\/app\/index.html": {
+	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/index.html",
+		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1518,7 +1518,7 @@
 		},
 	"kitAutoOutputPathEnabled": 1,
 	"kitAutoOutputPathFilenamePattern": "*.html",
-	"kitAutoOutputPathRelativePath": "\/app",
+	"kitAutoOutputPathRelativePath": "",
 	"kitAutoOutputPathReplace1": "\/source\/kit",
 	"kitAutoOutputPathReplace2": "\/app",
 	"kitAutoOutputPathStyle": 1,
@@ -1549,7 +1549,7 @@
 	"reloadFileURLs": 1,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
-	"sassAutoOutputPathRelativePath": "\/app\/assets\/css",
+	"sassAutoOutputPathRelativePath": "\/assets\/css",
 	"sassAutoOutputPathReplace1": "scss",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 1,
