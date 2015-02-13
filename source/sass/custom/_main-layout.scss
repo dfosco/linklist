@@ -100,10 +100,13 @@ section.link-list {
   background: darken($light-gray, 4%);
   &:hover { background: darken($light-gray, 6%); }
   
-  @include margin(0.5em null 0.5em null);
+  @include margin(1em null 1.5em null);
 
-  
   padding: 0.5em;
+
+  a + p, 
+  a + blockquote { @include margin(1em null null null) }
+
 }
 
 .link-box__inner {
@@ -111,12 +114,8 @@ section.link-list {
 }
 
 .link-title {
-  margin-bottom: 0.2em;
+  //margin-bottom: 0.2em;
   font-size: $h5-font-size;
-}
-
-a + p.link-description {
-  @include margin(1em 0 0 0);
 }
 
 blockquote {
