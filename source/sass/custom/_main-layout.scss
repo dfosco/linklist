@@ -118,6 +118,12 @@ section.link-list {
   font-size: $h5-font-size;
 }
 
+.link-img {
+  padding: 0em;
+  margin: -1.25em;
+  margin-bottom: 0.5em;
+}
+
 blockquote {
     
     &.link-description {
@@ -130,7 +136,12 @@ blockquote {
     
     font-size: 0.95em;
     border-left: 2px solid $light-gray;
-  } 
+  }
+
+span.quote {
+    font-size: 0.95em;
+    color: darken($medium-gray, 8%)
+} 
 
 .footer {
   ///////////////////////////////////////////////////////////////////////////////////
