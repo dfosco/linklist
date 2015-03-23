@@ -114,7 +114,7 @@ section.link-list {
 }
 
 .link-title {
-  //margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
   font-size: $h5-font-size;
 }
 
@@ -122,6 +122,10 @@ section.link-list {
   padding: 0em;
   margin: -1.25em;
   margin-bottom: 0.5em;
+
+  img {
+    width: 100%;
+  }
 }
 
 blockquote {
