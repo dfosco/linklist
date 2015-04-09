@@ -1,4 +1,4 @@
-gems: [bourbon, neat]
+gems: [bourbon, bitters, neat]
 
 # Structure configuration
 source: source
