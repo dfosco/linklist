@@ -1,18 +1,18 @@
 gems: [bourbon, bitters, neat]
 
+# Site settings
+title: The Link List
+email: danielfosco@gmail.com
+description:
+baseurl: http://dfosco.github.io/linklist
+
+
 # Structure configuration
 source: source
 destination: _site
 
 assets:
   cachebust: soft
-
-# Site settings
-title: Proteus
-description: Prototyping starter kit for Jekyll
-
-# Name of project on Github
-baseurl: /
 
 # Build settings
 markdown: kramdown

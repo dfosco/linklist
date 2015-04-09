@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Proteus</title>
-    <description>Prototyping starter kit for Jekyll</description>
+    <title>The Link List</title>
+    <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 09 Apr 2015 16:16:20 -0300</pubDate>
-    <lastBuildDate>Thu, 09 Apr 2015 16:16:20 -0300</lastBuildDate>
+    <pubDate>Thu, 09 Apr 2015 16:24:00 -0300</pubDate>
+    <lastBuildDate>Thu, 09 Apr 2015 16:24:00 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
