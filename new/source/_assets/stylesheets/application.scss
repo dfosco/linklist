@@ -1,0 +1,22 @@
+// Application Style Controller
+// Description: Set Imports and Variables (Image) Here
+
+// Paths Relative to /app/_/css
+// ------------------------------------------------------------------------
+$img-url: "../img";
+
+// Example of how to use -- background: url("#{$img-url}/background-image.png") repeat top left;
+
+// Include Libraries
+// ------------------------------------------------------------------------
+
+@import "base/base";
+@import "../lib/twemoji-awesome/twemoji-awesome.scss";
+
+
+// Include Custom Elements
+// ------------------------------------------------------------------------
+
+@import "custom/_main-layout.scss";
+@import "custom/_components.scss";
+@import "custom/_toolbox.scss";
