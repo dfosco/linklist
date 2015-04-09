@@ -2,7 +2,7 @@ gems: [bourbon, bitters, neat]
 
 # Structure configuration
 source: source
-destination: build
+destination: _site
 
 assets:
   cachebust: soft
