@@ -9,7 +9,6 @@ baseurl: http://thelinklist.co
 
 # Structure configuration
 source: source
-destination: _site
 
 assets:
   cachebust: soft
