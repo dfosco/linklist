@@ -4,11 +4,12 @@ gems: [bourbon, bitters, neat]
 title: The Link List
 email: danielfosco@gmail.com
 description:
-baseurl: http://thelinklist.co
+baseurl: http://dfosco.github.io/linklist
 
 
 # Structure configuration
 source: source
+destination: _site
 
 assets:
   cachebust: soft
